@@ -9,10 +9,12 @@ import Notification from './Notification'
 
 class Layout extends PureComponent {
   static defaultProps = {
+    children: null,
     headbar: true,
     sidebar: true,
-    children: null,
-    notification: false
+    notification: false,
+    toggleHeadbar: () => {},
+    toggleSidebar: () => {},
   }
 
   render() {
@@ -20,20 +22,21 @@ class Layout extends PureComponent {
       <ScrollToTop>
         <main className="Layout">
           {this.props.headbar && (
-            <div className="Layout__Headbar">
+            <header className="Layout__Headbar">
               <Headbar />
-            </div>
+            </header>
           )}
           {this.props.sidebar && (
-            <div className="Layout__Sidebar">
+            <aside className="Layout__Sidebar">
               <Sidebar />
-            </div>
+            </aside>
           )}
-          <div className="Layout__Content">
+          <article className="Layout__Content">
+            <button onClick={this.props.toggleSidebar}>toggle sidebar</button>
             <Content>
               {this.props.children}
             </Content>
-          </div>
+          </article>
         </main>
       </ScrollToTop>
     )

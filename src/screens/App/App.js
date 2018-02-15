@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import queryString from 'query-string'
 import config from 'config'
 
-import Layout from 'displays/Layout'
+import LayoutContainer from 'containers/LayoutContainer'
 import Sitemap from 'components/Sitemap'
 import Homepage from 'screens/Homepage'
 import Post from 'screens/Post'
@@ -13,7 +12,7 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <Layout>
+        <LayoutContainer>
           <Switch>
             <Route
               exact={true}
@@ -29,7 +28,7 @@ class App extends Component {
             <Route component={NotFound} />
           </Switch>
           <Sitemap />
-        </Layout>
+        </LayoutContainer>
       </BrowserRouter>
     )
   }

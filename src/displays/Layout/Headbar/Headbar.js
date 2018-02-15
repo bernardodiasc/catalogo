@@ -6,9 +6,9 @@ class Headbar extends PureComponent {
 
   render() {
     return (
-      <header className="Layout-Headbar">
+      <div className="Layout-Headbar">
         Headbar
-      </header>
+      </div>
     )
   }
 }

@@ -6,9 +6,9 @@ class Content extends PureComponent {
 
   render() {
     return (
-      <section className="Layout-Content">
+      <div className="Layout-Content">
         Content
-      </section>
+      </div>
     )
   }
 }

@@ -6,9 +6,9 @@ class Sidebar extends PureComponent {
 
   render() {
     return (
-      <aside className="Layout-Sidebar">
+      <div className="Layout-Sidebar">
         Sidebar
-      </aside>
+      </div>
     )
   }
 }
