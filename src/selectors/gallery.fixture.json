@@ -1,0 +1,322 @@
+{
+  "heroes": {
+    "the-envisioner": {
+      "card.png": {
+        "file": "/heroes/the-envisioner/card.png",
+        "dir": "/heroes/the-envisioner",
+        "name": "card",
+        "base": "card.png",
+        "ext": ".png",
+        "width": 290,
+        "height": 335
+      },
+      "hero.md": {
+        "file": "/heroes/the-envisioner/hero.md",
+        "dir": "/heroes/the-envisioner",
+        "name": "hero",
+        "base": "hero.md",
+        "ext": ".md",
+        "attr": {
+          "name": "The Envisioner",
+          "class": "Knight",
+          "story": "A Better World.",
+          "planet": "caytera",
+          "medals": [
+            "fit-quest-survivor",
+            "the-golden-sigil",
+            "god-mode-award",
+            "medal-of-bravery",
+            "soldier-spy"
+          ]
+        },
+        "body":
+          "\nEveryone said he was crazy. They thought his ideas and visions were nonsense. But really, they feared what he could see.\n\nThey feared his visions were true and that if they didn’t push themselves harder, they would lose all that they had. It’s no wonder he left Earth to discover who he was meant to be.\n\nThe Envisioner was born with a gift, one that would take him decades to discover how to harness. But once he did, he led a movement behind one of his visions — a world where everyone strives to unleash their potential.\n\nAfter years in the trenches leading teams of special forces on secretive missions, The Envisioner settled on the planet Cayterra, a place he had come to love for its modern architecture and connection with the planet’s natural raw beauty.\n\nHe now leads X-Team, the protectors of the universe, helping to keep peace and protect the freedom of all beings to unleash and bring about good in the world.\n"
+      },
+      "poster-dark.png": {
+        "file": "/heroes/the-envisioner/poster-dark.png",
+        "dir": "/heroes/the-envisioner",
+        "name": "poster-dark",
+        "base": "poster-dark.png",
+        "ext": ".png",
+        "width": 1600,
+        "height": 1029
+      },
+      "poster.png": {
+        "file": "/heroes/the-envisioner/poster.png",
+        "dir": "/heroes/the-envisioner",
+        "name": "poster",
+        "base": "poster.png",
+        "ext": ".png",
+        "width": 1600,
+        "height": 988
+      }
+    },
+    "alchemix": {
+      "card.png": {
+        "file": "/heroes/alchemix/card.png",
+        "dir": "/heroes/alchemix",
+        "name": "card",
+        "base": "card.png",
+        "ext": ".png",
+        "width": 290,
+        "height": 335
+      },
+      "hero.md": {
+        "file": "/heroes/alchemix/hero.md",
+        "dir": "/heroes/alchemix",
+        "name": "hero",
+        "base": "hero.md",
+        "ext": ".md",
+        "attr": {
+          "name": "Alchemix",
+          "class": "Healer",
+          "story": "An Unexpected Journey.",
+          "planet": "null",
+          "medals": ["fit-quest-survivor", "the-golden-sigil"]
+        },
+        "body":
+          "\nAs a child, Alchemix crash-landed in an escape pod on the planet Null, the lone survivor of a devastating Cymex attack.\n\nNull is a desert planet, nothing but rock and sand and not a single sign of life. From the surface, at least.\n\nWhen Alchemix regained consciousness he had been brought to a vast underground cavern, lit by phosphorescent crystals.\n\nHis rescuer introduced himself as Ioan, who had been exiled to Null years ago by a corrupt emperor. Ioan explained that Alchemix had been near death, but the spring water used to revive him had special properties. When the time was right, he would teach Alchemix how to harness this power...\n"
+      },
+      "poster-dark.png": {
+        "file": "/heroes/alchemix/poster-dark.png",
+        "dir": "/heroes/alchemix",
+        "name": "poster-dark",
+        "base": "poster-dark.png",
+        "ext": ".png",
+        "width": 1600,
+        "height": 1029
+      },
+      "poster.png": {
+        "file": "/heroes/alchemix/poster.png",
+        "dir": "/heroes/alchemix",
+        "name": "poster",
+        "base": "poster.png",
+        "ext": ".png",
+        "width": 1600,
+        "height": 988
+      }
+    },
+    "zero": {
+      "card.png": {
+        "file": "/heroes/zero/card.png",
+        "dir": "/heroes/zero",
+        "name": "card",
+        "base": "card.png",
+        "ext": ".png",
+        "width": 290,
+        "height": 335
+      },
+      "hero.md": {
+        "file": "/heroes/zero/hero.md",
+        "dir": "/heroes/zero",
+        "name": "hero",
+        "base": "hero.md",
+        "ext": ".md",
+        "attr": {
+          "name": "Zero",
+          "class": "Psychic",
+          "story": "The Magician.",
+          "planet": "elon",
+          "medals": null
+        },
+        "body":
+          "\nAn intellectual and thoughtful being, Zero believes that knowledge and technology are the forces that drive the universe forward and he’ll fight against anything that tries to take those two precious things away from any living being.\n\nHe’s in a crusade of helping people discover their true potential in life, driving those around him out of the status quo. He has been led by the example of his legendary grandparents, which taught him everything he knows. Now he is leading others on his own.\n\nZero is a master of teletransportation, which is his trademark. Tales across the universe link him to a wide variety of unconfirmed skills, most notably mind controlling abilities, which is most likely just highly developed social engineering.\n\nAs of now, it’s a mystery whether Zero possesses real super powers or if he has invented technology so advanced that even his own people refer to him as “The Magician” sometimes.\n"
+      },
+      "poster-dark.png": {
+        "file": "/heroes/zero/poster-dark.png",
+        "dir": "/heroes/zero",
+        "name": "poster-dark",
+        "base": "poster-dark.png",
+        "ext": ".png",
+        "width": 1600,
+        "height": 1029
+      },
+      "poster.png": {
+        "file": "/heroes/zero/poster.png",
+        "dir": "/heroes/zero",
+        "name": "poster",
+        "base": "poster.png",
+        "ext": ".png",
+        "width": 1600,
+        "height": 988
+      }
+    }
+  },
+  "medals": {
+    "fit-quest-survivor": {
+      "title": "Fit-Quest Survivor",
+      "file": "/medals/fit-quest-survivor.png",
+      "dir": "/medals",
+      "name": "fit-quest-survivor",
+      "base": "fit-quest-survivor.png",
+      "ext": ".png",
+      "width": 102,
+      "height": 102
+    },
+    "the-golden-sigil": {
+      "title": "The Golden Sigil",
+      "file": "/medals/the-golden-sigil.png",
+      "dir": "/medals",
+      "name": "the-golden-sigil",
+      "base": "the-golden-sigil.png",
+      "ext": ".png",
+      "width": 102,
+      "height": 102
+    },
+    "god-mode-award": {
+      "title": "God Mode Award",
+      "file": "/medals/god-mode-award.png",
+      "dir": "/medals",
+      "name": "god-mode-award",
+      "base": "god-mode-award.png",
+      "ext": ".png",
+      "width": 102,
+      "height": 102
+    },
+    "medal-of-bravery": {
+      "title": "Medal of Bravery",
+      "file": "/medals/medal-of-bravery.png",
+      "dir": "/medals",
+      "name": "medal-of-bravery",
+      "base": "medal-of-bravery.png",
+      "ext": ".png",
+      "width": 102,
+      "height": 102
+    },
+    "soldier-spy": {
+      "title": "Soldier Spy",
+      "file": "/medals/soldier-spy.png",
+      "dir": "/medals",
+      "name": "soldier-spy",
+      "base": "soldier-spy.png",
+      "ext": ".png",
+      "width": 102,
+      "height": 102
+    }
+  },
+  "planets": {
+    "caytera": {
+      "planet.md": {
+        "file": "/planets/caytera/planet.md",
+        "dir": "/planets/caytera",
+        "name": "planet",
+        "base": "planet.md",
+        "ext": ".md",
+        "attr": {
+          "name": "Caytera"
+        },
+        "body":
+          "\nCaytera is home to no more than 1,000 beings, most of whom are immigrants from other planets in search of a place of peace and serenity. The diverse population has brought a wide range of architectural influences, all centered around designs that promote tranquility. The planet is mostly green, filled with sporadic bodies of water -- enough to support the small population.\n"
+      },
+      "planet.png": {
+        "file": "/planets/caytera/planet.png",
+        "dir": "/planets/caytera",
+        "name": "planet",
+        "base": "planet.png",
+        "ext": ".png",
+        "width": 476,
+        "height": 476
+      },
+      "texture-clouds.png": {
+        "file": "/planets/caytera/texture-clouds.png",
+        "dir": "/planets/caytera",
+        "name": "texture-clouds",
+        "base": "texture-clouds.png",
+        "ext": ".png",
+        "width": 1024,
+        "height": 512
+      },
+      "texture.png": {
+        "file": "/planets/caytera/texture.png",
+        "dir": "/planets/caytera",
+        "name": "texture",
+        "base": "texture.png",
+        "ext": ".png",
+        "width": 1024,
+        "height": 512
+      }
+    },
+    "null": {
+      "planet.md": {
+        "file": "/planets/null/planet.md",
+        "dir": "/planets/null",
+        "name": "planet",
+        "base": "planet.md",
+        "ext": ".md",
+        "attr": {
+          "name": "Null"
+        },
+        "body":
+          "\nNull is a desert planet, nothing but rock and sand and not a single sign of life. From the surface, at least. It also contains a vast underground cavern, lit by phosphorescent crystals. A serene lake lapped at the edge of a beach of powdery ash-pink sand, backed by small trees and flowering succulents. Birds dart between the bushes chasing hovering insects. The underground was once used by the Loppoff Syndicate for its slave trade, until the X-Team Xplorers destroyed their operation.\n"
+      },
+      "planet.png": {
+        "file": "/planets/null/planet.png",
+        "dir": "/planets/null",
+        "name": "planet",
+        "base": "planet.png",
+        "ext": ".png",
+        "width": 476,
+        "height": 476
+      },
+      "texture-clouds.png": {
+        "file": "/planets/null/texture-clouds.png",
+        "dir": "/planets/null",
+        "name": "texture-clouds",
+        "base": "texture-clouds.png",
+        "ext": ".png",
+        "width": 1024,
+        "height": 512
+      },
+      "texture.png": {
+        "file": "/planets/null/texture.png",
+        "dir": "/planets/null",
+        "name": "texture",
+        "base": "texture.png",
+        "ext": ".png",
+        "width": 1024,
+        "height": 512
+      }
+    },
+    "elon": {
+      "planet.md": {
+        "file": "/planets/elon/planet.md",
+        "dir": "/planets/elon",
+        "name": "planet",
+        "base": "planet.md",
+        "ext": ".md",
+        "attr": {
+          "name": "Elon"
+        },
+        "body":
+          "\nElon was colonized by humans centuries ago. While the Elonians' appearance resembles that of the people of Earth, they are so advanced that they are not considered humans anymore. Elon is a fully sustainable planet with an incredible amount technology. Elon is a leading example in the universe in the fields of nanotechnology, bioengineering and artificial intelligence.\n"
+      },
+      "planet.png": {
+        "file": "/planets/elon/planet.png",
+        "dir": "/planets/elon",
+        "name": "planet",
+        "base": "planet.png",
+        "ext": ".png",
+        "width": 476,
+        "height": 476
+      },
+      "texture-clouds.png": {
+        "file": "/planets/elon/texture-clouds.png",
+        "dir": "/planets/elon",
+        "name": "texture-clouds",
+        "base": "texture-clouds.png",
+        "ext": ".png",
+        "width": 1024,
+        "height": 512
+      },
+      "texture.png": {
+        "file": "/planets/elon/texture.png",
+        "dir": "/planets/elon",
+        "name": "texture",
+        "base": "texture.png",
+        "ext": ".png",
+        "width": 1024,
+        "height": 512
+      }
+    }
+  }
+}
