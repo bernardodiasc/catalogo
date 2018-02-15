@@ -7,4 +7,9 @@ import DisplaysReadme from 'displays/README.md'
 storiesOf('Displays', module)
   .add('About display components', () => <Docs>{DisplaysReadme}</Docs>)
 
-// import 'displays/HeaderBar/HeaderBar.story.js'
+import 'displays/Layout/Layout.story.js'
+import 'displays/Layout/Headbar/Headbar.story.js'
+import 'displays/Layout/Sidebar/Sidebar.story.js'
+import 'displays/Layout/Content/Content.story.js'
+import 'displays/Layout/Notification/Notification.story.js'
+import 'displays/Post/Post.story.js'

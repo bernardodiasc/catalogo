@@ -8,3 +8,6 @@ storiesOf('Screens', module)
   .add('About screen components', () => <Docs>{ScreensReadme}</Docs>)
 
 import 'screens/App/App.story.js'
+import 'screens/Homepage/Homepage.story.js'
+import 'screens/Post/Post.story.js'
+import 'screens/NotFound/NotFound.story.js'

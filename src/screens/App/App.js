@@ -3,25 +3,36 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import queryString from 'query-string'
 import config from 'config'
 
-import ScrollToTop from 'components/ScrollToTop'
+import Layout from 'displays/Layout'
 import Sitemap from 'components/Sitemap'
-// import Heroes from 'screens/Heroes'
+import Homepage from 'screens/Homepage'
+import Post from 'screens/Post'
+import NotFound from 'screens/NotFound'
 
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <ScrollToTop>
+        <Layout>
+          <Switch>
+            <Route
+              exact={true}
+              path={`${config.PUBLIC_URL}/`}
+              component={Homepage}
+            />
+            <Route
+              path={`${config.PUBLIC_URL}/post/:postId`}
+              render={({ match }) => (
+                <Post postId={match.params.postId} />
+              )}
+            />
+            <Route component={NotFound} />
+          </Switch>
           <Sitemap />
-        </ScrollToTop>
+        </Layout>
       </BrowserRouter>
     )
   }
 }
-
-          // <Switch>
-          //   <Route exact={true} path={`${config.PUBLIC_URL}/`} component={Heroes} />
-          //   <Route component={Heroes} />
-          // </Switch>
 
 export default App

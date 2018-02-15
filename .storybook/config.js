@@ -4,8 +4,8 @@ import { setOptions } from '@storybook/addon-options';
 import '../public/styles/main.css';
 
 setOptions({
-  name: 'X-Team Legacy',
-  url: 'https://x-team.com/legacy/',
+  name: 'Bernardo Dias da Cruz',
+  url: 'https://bernrdodiasc.github.io/',
   // goFullScreen: false,
   // showStoriesPanel: true,
   // showAddonPanel: true,
