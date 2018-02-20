@@ -1,6 +1,6 @@
 # Storybook
 
-This platform is a tool for development of X-Team Legacy.
+This platform is a tool for development of this project.
 
 There are many documentation available about the system design and component usages.
 

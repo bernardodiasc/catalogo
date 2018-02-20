@@ -12,9 +12,10 @@
 }
 
 .Layout__Sidebar {
-  width: 300px;
+  /*width: 300px;*/
 }
 
 .Layout__Content {
-  width: calc(100% - 300px);
+  /*width: calc(100% - 300px);*/
+  width: 100%;
 }

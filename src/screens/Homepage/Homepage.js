@@ -1,17 +1,16 @@
 import React, { Component } from 'react'
 
+import Layout from 'displays/Layout'
+import Welcome from 'displays/Welcome'
+
 class Homepage extends Component {
   static defaultProps = {}
 
-  constructor(props) {
-    super(props)
-  }
-
   render() {
     return (
-      <div>
-        Homepage
-      </div>
+      <Layout sidebar={false}>
+        <Welcome />
+      </Layout>
     )
   }
 }

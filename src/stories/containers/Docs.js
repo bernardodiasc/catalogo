@@ -4,7 +4,7 @@ import renderHTML from 'react-render-html'
 import converter from 'rel-to-abs'
 import './Docs.css'
 
-const URL = 'https://github.com/x-team/x-team-com-new/tree/develop/legacy'
+const URL = ''
 
 class Docs extends PureComponent {
   static defaultProps = {
@@ -17,7 +17,7 @@ class Docs extends PureComponent {
       content = ReactDOMServer.renderToStaticMarkup(content)
     }
     content = content.replace(/>\s+</g,'><')
-    content = converter.convert(content, URL)
+    // content = converter.convert(content, URL)
     content = renderHTML(content)
     return (
       <div className="Storybook-Docs">

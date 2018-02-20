@@ -1,13 +1,13 @@
-# Post
+# Welcome
 
 ## How to use
 
 ```
-import Post from 'screens/Post'
+import Welcome from 'displays/Welcome'
 ```
 
 ```
-<Post />
+<Welcome />
 ```
 
 ## Properties

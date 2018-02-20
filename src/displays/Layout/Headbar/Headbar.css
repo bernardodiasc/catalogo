@@ -3,3 +3,7 @@
   height: 100%;
   border-bottom: 1px solid;
 }
+
+.Layout-Headbar ul li {
+  display: inline-block;
+}

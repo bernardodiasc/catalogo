@@ -1,9 +1,9 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import Post from './Post.js'
+import Welcome from './Welcome.js'
 
 it('renders without crashing', () => {
-  const component = shallow(<Post />)
+  const component = shallow(<Welcome />)
   expect(component).toMatchSnapshot()
 })

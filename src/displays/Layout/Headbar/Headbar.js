@@ -7,7 +7,12 @@ class Headbar extends PureComponent {
   render() {
     return (
       <div className="Layout-Headbar">
-        Headbar
+        Brand
+        <ul>
+          <li><a>link</a></li>
+          <li><a>link</a></li>
+          <li><a>link</a></li>
+        </ul>
       </div>
     )
   }

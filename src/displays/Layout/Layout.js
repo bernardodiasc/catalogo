@@ -5,7 +5,7 @@ import ScrollToTop from 'components/ScrollToTop'
 import Headbar from './Headbar'
 import Sidebar from './Sidebar'
 import Content from './Content'
-import Notification from './Notification'
+// import Notification from './Notification'
 
 class Layout extends PureComponent {
   static defaultProps = {
@@ -32,7 +32,6 @@ class Layout extends PureComponent {
             </aside>
           )}
           <article className="Layout__Content">
-            <button onClick={this.props.toggleSidebar}>toggle sidebar</button>
             <Content>
               {this.props.children}
             </Content>

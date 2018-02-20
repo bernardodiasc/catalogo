@@ -3,9 +3,9 @@ import React, { Component } from 'react'
 class NotFound extends Component {
   static defaultProps = {}
 
-  constructor(props) {
-    super(props)
-  }
+  // constructor(props) {
+  //   super(props)
+  // }
 
   render() {
     return (
