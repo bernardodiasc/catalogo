@@ -98,10 +98,10 @@
   "gh-pages-deploy": {
     "staticpath": "build",
     "prep": [
-      "build",
-      "clean-source"
+      "build"
     ],
     "post": [
+      "clean-source"
     ],
     "noprompt": false
   }
