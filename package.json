@@ -29,8 +29,7 @@
     "docs": "export NODE_PATH=src && start-storybook -p 9009 -s public",
     "docs:build": "export NODE_PATH=src && build-storybook -s public -o build/docs",
     "serve": "node server.js",
-    "deploy": "touch ./.nojekyll && gh-pages-deploy",
-    "clean-source": "rimraf README.md build docs package.json public server.js src yarn.lock .editorconfig .env .eslintignore .eslintrc.js .gitignore .nvmrc .storybook .stylelintrc"
+    "deploy": "./node_modules/.bin/gh-pages-deploy"
   },
   "lint-staged": {
     "src/**/*.js": [
@@ -99,9 +98,6 @@
     "staticpath": "build",
     "prep": [
       "build"
-    ],
-    "post": [
-      "clean-source"
     ],
     "noprompt": false
   }
