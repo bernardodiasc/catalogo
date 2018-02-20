@@ -14,7 +14,7 @@ class Welcome extends PureComponent {
     return (
       <div className="Welcome">
         <div className="Welcome__copy">
-          Welcome!
+          Bem vindo(a) ao melhor catálogo comercial do mundo!
         </div>
         <div className="Welcome__selector">
           <Select
