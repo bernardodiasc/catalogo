@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<withRouter(ScrollToTop)>
+  <main
+    className="Layout"
+  >
+    <header
+      className="Layout__Headbar"
+    >
+      <Headbar />
+    </header>
+    <aside
+      className="Layout__Sidebar"
+    >
+      <Sidebar />
+    </aside>
+    <article
+      className="Layout__Content"
+    >
+      <Content />
+    </article>
+  </main>
+</withRouter(ScrollToTop)>
+`;

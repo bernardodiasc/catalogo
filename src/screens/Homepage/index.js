@@ -1,2 +1,3 @@
 import Homepage from './Homepage'
-export default Homepage
+import { withRouter } from 'react-router-dom'
+export default withRouter(Homepage)

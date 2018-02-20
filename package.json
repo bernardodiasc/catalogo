@@ -1,16 +1,16 @@
 {
-  "name": "react",
+  "name": "catalogo",
   "version": "1.0.0",
-  "description": "React components",
+  "description": "Catálogo comercial",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bernardodiasc/react.git"
+    "url": "git+https://github.com/bernardodiasc/catalogo.git"
   },
   "author": "Bernardo Dias <bernardodiasdacruz@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bernardodiasc/react/issues"
+    "url": "https://github.com/bernardodiasc/catalogo/issues"
   },
   "homepage": "https://bernardodiasc.github.io/catalogo",
   "scripts": {

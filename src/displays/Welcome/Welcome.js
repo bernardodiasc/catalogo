@@ -4,10 +4,12 @@ import 'react-select/dist/react-select.css'
 import './Welcome.css'
 
 class Welcome extends PureComponent {
-  static defaultProps = {}
+  static defaultProps = {
+    onSelect: value => value
+  }
 
   handleChange = (selectedOption) => {
-    console.log(`Selected: ${selectedOption.label}`);
+    this.props.onSelect(selectedOption.value)
   }
 
   render() {

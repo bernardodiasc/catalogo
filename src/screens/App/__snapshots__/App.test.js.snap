@@ -10,16 +10,29 @@ exports[`renders without crashing 1`] = `
         path="/"
       />
       <Route
-        path="/hero/:heroId"
+        exact={true}
+        path="/:city"
         render={[Function]}
       />
       <Route
-        component={[Function]}
         exact={true}
-        path="/game"
+        path="/:city/:advertiser"
+        render={[Function]}
       />
       <Route
-        path="/game/pack"
+        path="/quem-somos"
+        render={[Function]}
+      />
+      <Route
+        path="/anunciar"
+        render={[Function]}
+      />
+      <Route
+        path="/franquia"
+        render={[Function]}
+      />
+      <Route
+        path="/contato"
         render={[Function]}
       />
       <Route

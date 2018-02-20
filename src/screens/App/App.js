@@ -5,6 +5,8 @@ import config from 'config'
 import ScrollToTop from 'components/ScrollToTop'
 import Sitemap from 'components/Sitemap'
 import Homepage from 'screens/Homepage'
+import City from 'screens/City'
+import Advertiser from 'screens/Advertiser'
 import Content from 'screens/Content'
 import NotFound from 'screens/NotFound'
 
@@ -18,6 +20,20 @@ class App extends Component {
               exact={true}
               path={`${config.PUBLIC_URL}/`}
               component={Homepage}
+            />
+            <Route
+              exact={true}
+              path={`${config.PUBLIC_URL}/:city`}
+              render={({ match }) => (
+                <City city={match.params.city} />
+              )}
+            />
+            <Route
+              exact={true}
+              path={`${config.PUBLIC_URL}/:city/:advertiser`}
+              render={({ match }) => (
+                <Advertiser city={match.params.city} advertiser={match.params.advertiser} />
+              )}
             />
             <Route
               path={`${config.PUBLIC_URL}/quem-somos`}
