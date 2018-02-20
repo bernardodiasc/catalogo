@@ -1,5 +1,0 @@
----
-- baboon: Pretty Baboon
-- boats: Grayscale Boats
-- pnglogo: Ugly PNG logo
----

@@ -1,38 +1,52 @@
 const path = require('path')
 
 /**
- * Posts content type translation
+ * Cities content type translation
  * @param  {Array} content      List of files
  * @param  {String} contentType Content type name
- * @return {Object}             The posts content type data object
+ * @return {Object}             The cities content type data object
  */
-function posts (content, contentType) {
+function cities (content, contentType) {
   let output = {}
   const allFiles = content.filter(each => each.dir.includes(`/${contentType}`))
   const index = allFiles.filter(each => each.base === 'index.md')[0]
   index.attr.forEach(each => {
-    allFiles.forEach(file => {
-      if (file.name === each) {
-        output[each] = file
-      }
+    Object.keys(each).forEach(key => {
+      const allFilesForEach = allFiles.filter(file =>
+        file.dir.includes(`/${contentType}/${key}`)
+      )
+      output[key] = {}
+      allFilesForEach.forEach(file => {
+        if (file.dir.includes(`/${contentType}/${key}`)) {
+          output[key][file.base] = file
+        }
+      })
     })
   })
   return output
 }
 
 /**
- * Gallery content type translation
+ * Advertisers content type translation
  * @param  {Array} content      List of files
  * @param  {String} contentType Content type name
- * @return {Object}             The gallery content type data object
+ * @return {Object}             The advertisers content type data object
  */
-function gallery (content, contentType) {
+function advertisers (content, contentType) {
   let output = {}
   const allFiles = content.filter(each => each.dir.includes(`/${contentType}`))
   const index = allFiles.filter(each => each.base === 'index.md')[0]
   index.attr.forEach(each => {
     Object.keys(each).forEach(key => {
-      output[key] = Object.assign({ title: each[key] }, allFiles.filter(file => file.name === key)[0])
+      const allFilesForEach = allFiles.filter(file =>
+        file.dir.includes(`/${contentType}/${key}`)
+      )
+      output[key] = {}
+      allFilesForEach.forEach(file => {
+        if (file.dir.includes(`/${contentType}/${key}`)) {
+          output[key][file.base] = file
+        }
+      })
     })
   })
   return output
@@ -48,8 +62,8 @@ const config = {
   include: ['.md', '.png'],
   exclude: ['README.md'],
   contentTypes: [
-    { posts },
-    { gallery },
+    { cities },
+    { advertisers },
   ]
 }
 
