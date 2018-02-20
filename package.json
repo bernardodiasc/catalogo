@@ -12,7 +12,7 @@
   "bugs": {
     "url": "https://github.com/bernardodiasc/react/issues"
   },
-  "homepage": "https://github.com/bernardodiasc/react",
+  "homepage": "https://bernardodiasc.github.io/catalogo",
   "scripts": {
     "component": "node src/config/componentGenerator.js",
     "content": "./node_modules/.bin/filestojson src/config/filestojson.js",
@@ -28,7 +28,9 @@
     "eject": "react-scripts eject",
     "docs": "export NODE_PATH=src && start-storybook -p 9009 -s public",
     "docs:build": "export NODE_PATH=src && build-storybook -s public -o build/docs",
-    "serve": "node server.js"
+    "serve": "node server.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "lint-staged": {
     "src/**/*.js": [
@@ -83,6 +85,7 @@
     "eslint-plugin-jest": "^21.7.0",
     "eslint-plugin-react": "^7.6.1",
     "express": "^4.16.2",
+    "gh-pages": "^1.1.0",
     "jest-enzyme": "^4.1.1",
     "opn": "^5.2.0",
     "react-snap": "^1.11.3",
