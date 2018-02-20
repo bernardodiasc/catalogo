@@ -28,8 +28,7 @@
     "eject": "react-scripts eject",
     "docs": "export NODE_PATH=src && start-storybook -p 9009 -s public",
     "docs:build": "export NODE_PATH=src && build-storybook -s public -o build/docs",
-    "serve": "node server.js",
-    "deploy": "./node_modules/.bin/gh-pages-deploy"
+    "serve": "node server.js"
   },
   "lint-staged": {
     "src/**/*.js": [
@@ -84,21 +83,12 @@
     "eslint-plugin-jest": "^21.7.0",
     "eslint-plugin-react": "^7.6.1",
     "express": "^4.16.2",
-    "gh-pages-deploy": "^0.4.2",
     "jest-enzyme": "^4.1.1",
     "opn": "^5.2.0",
     "react-snap": "^1.11.3",
     "react-test-renderer": "^16.2.0",
-    "rimraf": "^2.6.2",
     "storybook-router": "^0.3.2",
     "stylelint": "^8.4.0",
     "stylelint-config-standard": "^18.0.0"
-  },
-  "gh-pages-deploy": {
-    "staticpath": "build",
-    "prep": [
-      "build"
-    ],
-    "noprompt": false
   }
 }
