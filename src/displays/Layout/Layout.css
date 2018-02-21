@@ -11,6 +11,10 @@
   height: 100px;
 }
 
+.Layout__SearchBar {}
+
+.Layout__Breadcrumbs {}
+
 .Layout__LeftColumn {}
 
 .Layout__RightColumn {}
@@ -18,3 +22,5 @@
 .Layout__Content {
   width: 100%;
 }
+
+.Layout__FooterBar {}

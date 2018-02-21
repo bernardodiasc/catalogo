@@ -2,17 +2,22 @@ import React, { PureComponent } from 'react'
 import './Layout.css'
 
 import HeaderBar from './HeaderBar'
+import SearchBar from './SearchBar'
+import Breadcrumbs from './Breadcrumbs'
 import LeftColumn from './LeftColumn'
 import RightColumn from './RightColumn'
 import Content from './Content'
+import FooterBar from './FooterBar'
 // import Notification from './Notification'
 import Sitemap from 'displays/Sitemap'
 
 class Layout extends PureComponent {
   static defaultProps = {
     children: null,
-    leftcolumn: false,
-    rightcolumn: false,
+    breadcrumbs: false,
+    leftColumn: false,
+    rightColumn: false,
+    hasSearchBar: false,
   }
 
   componentDidUpdate(prevProps) {
@@ -27,17 +32,29 @@ class Layout extends PureComponent {
         <header className="Layout__HeaderBar">
           <HeaderBar />
         </header>
-        {this.props.leftcolumn && (
+        {this.props.hasSearchBar && (
+          <div className="Layout__SearchBar">
+            <SearchBar />
+          </div>
+        )}
+        {this.props.breadcrumbs && (
+          <div className="Layout__Breadcrumbs">
+            <Breadcrumbs>
+              {this.props.breadcrumbs}
+            </Breadcrumbs>
+          </div>
+        )}
+        {this.props.leftColumn && (
           <aside className="Layout__LeftColumn">
             <LeftColumn>
-              {this.props.leftcolumn}
+              {this.props.leftColumn}
             </LeftColumn>
           </aside>
         )}
-        {this.props.rightcolumn && (
+        {this.props.rightColumn && (
           <aside className="Layout__RightColumn">
             <RightColumn>
-              {this.props.rightcolumn}
+              {this.props.rightColumn}
             </RightColumn>
           </aside>
         )}
@@ -46,7 +63,10 @@ class Layout extends PureComponent {
             {this.props.children}
           </Content>
         </article>
-        <Sitemap />
+        <footer className="Layout__FooterBar">
+          <FooterBar />
+          <Sitemap />
+        </footer>
       </main>
     )
   }

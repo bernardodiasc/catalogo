@@ -37,11 +37,18 @@ class Advertiser extends Component {
   }
 
   render() {
+    const breadcrumbsRender = [
+      <Link
+        key={`breadcrumbs-${this.props.city}`}
+        to={`${config.PUBLIC_URL}/${this.props.city}`}
+      >
+        {this.cititesSelectors.getCityNameById(this.props.city)}
+      </Link>
+    ]
+
     return (
-      <Layout>
+      <Layout hasSearchBar breadcrumbs={breadcrumbsRender}>
         {this.props.advertiser}
-        <hr />
-        <Link to={`${config.PUBLIC_URL}/${this.props.city}`}>voltar para pagina da cidade</Link><br/>
       </Layout>
     )
   }

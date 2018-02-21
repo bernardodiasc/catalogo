@@ -1,11 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders without crashing 1`] = `
-<footer
+<nav
   className="Sitemap"
 >
-  <nav>
-    <ul />
-  </nav>
-</footer>
+  <ul>
+    <li>
+      <a
+        href="/"
+      >
+        Homepage
+      </a>
+    </li>
+    <li>
+      <a
+        href="/quem-somos"
+      >
+        Quem Somos
+      </a>
+    </li>
+    <li>
+      <a
+        href="/anunciar"
+      >
+        Anunciar
+      </a>
+    </li>
+    <li>
+      <a
+        href="/franquia"
+      >
+        Franquia
+      </a>
+    </li>
+    <li>
+      <a
+        href="/contato"
+      >
+        Contato
+      </a>
+    </li>
+  </ul>
+</nav>
 `;

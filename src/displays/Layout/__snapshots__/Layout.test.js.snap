@@ -14,6 +14,11 @@ exports[`renders without crashing 1`] = `
   >
     <Content />
   </article>
-  <Sitemap />
+  <footer
+    className="Layout__FooterBar"
+  >
+    <FooterBar />
+    <Sitemap />
+  </footer>
 </main>
 `;

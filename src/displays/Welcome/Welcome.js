@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
-import Select from 'react-select'
-import 'react-select/dist/react-select.css'
 import './Welcome.css'
+
+import SelectBox from 'displays/SelectBox'
 
 class Welcome extends PureComponent {
   static defaultProps = {
@@ -19,7 +19,7 @@ class Welcome extends PureComponent {
           Bem vindo(a) ao melhor catálogo comercial do mundo!
         </div>
         <div className="Welcome__selector">
-          <Select
+          <SelectBox
             name="select-city"
             placeholder="Selecione uma cidade..."
             onChange={this.handleChange}

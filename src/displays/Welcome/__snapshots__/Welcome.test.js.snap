@@ -12,40 +12,9 @@ exports[`renders without crashing 1`] = `
   <div
     className="Welcome__selector"
   >
-    <Select
-      arrowRenderer={[Function]}
-      autosize={true}
-      backspaceRemoves={true}
-      backspaceToRemoveMessage="Press backspace to remove {label}"
-      clearAllText="Clear all"
-      clearRenderer={[Function]}
-      clearValueText="Clear value"
-      clearable={true}
-      closeOnSelect={true}
-      deleteRemoves={true}
-      delimiter=","
-      disabled={false}
-      escapeClearsValue={true}
-      filterOptions={[Function]}
-      ignoreAccents={true}
-      ignoreCase={true}
-      inputProps={Object {}}
-      isLoading={false}
-      joinValues={false}
-      labelKey="label"
-      matchPos="any"
-      matchProp="any"
-      menuBuffer={0}
-      menuRenderer={[Function]}
-      multi={false}
+    <SelectBox
       name="select-city"
-      noResultsText="No results found"
-      onBlurResetsInput={true}
       onChange={[Function]}
-      onCloseResetsInput={true}
-      onSelectResetsInput={true}
-      openOnClick={true}
-      optionComponent={[Function]}
       options={
         Array [
           Object {
@@ -54,18 +23,7 @@ exports[`renders without crashing 1`] = `
           },
         ]
       }
-      pageSize={5}
       placeholder="Selecione uma cidade..."
-      removeSelected={true}
-      required={false}
-      rtl={false}
-      scrollMenuIntoView={true}
-      searchable={true}
-      simpleValue={false}
-      tabSelectsValue={true}
-      trimFilter={true}
-      valueComponent={[Function]}
-      valueKey="value"
     />
   </div>
 </div>

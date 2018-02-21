@@ -1,18 +1,18 @@
 import React, { PureComponent } from 'react'
-import './RightColumn.css'
+import './Breadcrumbs.css'
 
-class RightColumn extends PureComponent {
+class Breadcrumbs extends PureComponent {
   static defaultProps = {
     children: null,
   }
 
   render() {
     return (
-      <div className="Layout-RightColumn">
+      <div className="Layout-Breadcrumbs">
         {this.props.children}
       </div>
     )
   }
 }
 
-export default RightColumn
+export default Breadcrumbs

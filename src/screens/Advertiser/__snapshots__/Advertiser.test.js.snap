@@ -1,14 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders without crashing 1`] = `
-<withRouter(Layout)>
-  <hr />
-  <Link
-    replace={false}
-    to="/null"
-  >
-    voltar para pagina da cidade
-  </Link>
-  <br />
-</withRouter(Layout)>
+<withRouter(Layout)
+  breadcrumbs={
+    Array [
+      <Link
+        replace={false}
+        to="/null"
+    />,
+    ]
+  }
+  hasSearchBar={true}
+/>
 `;

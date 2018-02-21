@@ -33,18 +33,19 @@ class City extends Component {
   }
 
   render() {
+    const leftColumnRender = Object.keys(this.advertisers)
+      .map(advertiser => (
+        <Link
+          key={advertiser}
+          to={`${config.PUBLIC_URL}/${this.props.city}/${advertiser}`}
+        >
+          {this.advertisersSelectors.getAdvertiserNameById(advertiser)}
+        </Link>
+      ))
+
     return (
-      <Layout>
+      <Layout hasSearchBar leftColumn={leftColumnRender}>
         {this.cititesSelectors.getCityNameById(this.props.city)}
-        <hr />
-        {Object.keys(this.advertisers).map(advertiser => (
-          <Link
-            key={advertiser}
-            to={`${config.PUBLIC_URL}/${this.props.city}/${advertiser}`}
-          >
-            {this.advertisersSelectors.getAdvertiserNameById(advertiser)}
-          </Link>
-        ))}
       </Layout>
     )
   }
