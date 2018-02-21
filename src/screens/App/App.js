@@ -8,7 +8,6 @@ import Homepage from 'screens/Homepage'
 import City from 'screens/City'
 import Advertiser from 'screens/Advertiser'
 import Content from 'screens/Content'
-import NotFound from 'screens/NotFound'
 
 class App extends Component {
   render() {
@@ -57,7 +56,7 @@ class App extends Component {
               />
             )}
           />
-          <Route component={NotFound} />
+          <Route component={Homepage} />
         </Switch>
         <Sitemap />
       </ScrollToTop>

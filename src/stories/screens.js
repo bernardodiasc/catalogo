@@ -9,4 +9,6 @@ storiesOf('Screens', module)
 
 import 'screens/App/App.story.js'
 import 'screens/Homepage/Homepage.story.js'
-// import 'screens/NotFound/NotFound.story.js'
+import 'screens/City/City.story.js'
+import 'screens/Advertiser/Advertiser.story.js'
+import 'screens/Content/Content.story.js'
