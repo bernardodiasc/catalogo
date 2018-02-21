@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<div
+  className="Layout-HeaderBar"
+>
+  <div
+    className="Layout-HeaderBar__brand"
+  >
+    <Link
+      replace={false}
+      to="/"
+    >
+      Brand
+    </Link>
+  </div>
+  <ul
+    className="Layout-HeaderBar__nav"
+  >
+    <li>
+      <Link
+        replace={false}
+        to="/quem-somos"
+      >
+        Quem Somos
+      </Link>
+    </li>
+    <li>
+      <Link
+        replace={false}
+        to="/anunciar"
+      >
+        Anunciar
+      </Link>
+    </li>
+    <li>
+      <Link
+        replace={false}
+        to="/franquia"
+      >
+        Franquia
+      </Link>
+    </li>
+    <li>
+      <Link
+        replace={false}
+        to="/contato"
+      >
+        Contato
+      </Link>
+    </li>
+  </ul>
+</div>
+`;

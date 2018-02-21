@@ -8,8 +8,11 @@ storiesOf('Displays', module)
   .add('About display components', () => <Docs>{DisplaysReadme}</Docs>)
 
 import 'displays/Layout/Layout.story.js'
-import 'displays/Layout/Headbar/Headbar.story.js'
-import 'displays/Layout/Sidebar/Sidebar.story.js'
+import 'displays/Layout/HeaderBar/HeaderBar.story.js'
+import 'displays/Layout/SearchBar/SearchBar.story.js'
+import 'displays/Layout/LeftColumn/LeftColumn.story.js'
+import 'displays/Layout/RightColumn/RightColumn.story.js'
 import 'displays/Layout/Content/Content.story.js'
-// import 'displays/Layout/Notification/Notification.story.js'
+import 'displays/Layout/FooterBar/FooterBar.story.js'
+import 'displays/Layout/Notification/Notification.story.js'
 import 'displays/Welcome/Welcome.story.js'

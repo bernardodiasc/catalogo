@@ -1,26 +1,33 @@
 import {
-  TOGGLE_HEADBAR,
-  TOGGLE_SIDEBAR,
+  TOGGLE_HEADERBAR,
+  TOGGLE_LEFTCOLUMN,
+  TOGGLE_RIGHTCOLUMN,
 } from 'actions'
 
 const initialState = {
-  headbar: true,
-  sidebar: true,
+  headerbar: true,
+  leftcolumn: false,
+  rightcolumn: false,
 }
 
 export const layout = (state = initialState, action) => {
   switch (action.type) {
-    case TOGGLE_HEADBAR:
-      return {
-        ...state,
-        headbar: !state.headbar,
-      }
-    case TOGGLE_SIDEBAR:
-      return {
-        ...state,
-        sidebar: !state.sidebar,
-      }
-    default:
-      return state
+  case TOGGLE_HEADERBAR:
+    return {
+      ...state,
+      headerbar: !state.headerbar,
+    }
+  case TOGGLE_LEFTCOLUMN:
+    return {
+      ...state,
+      leftcolumn: !state.leftcolumn,
+    }
+  case TOGGLE_RIGHTCOLUMN:
+    return {
+      ...state,
+      rightcolumn: !state.rightcolumn,
+    }
+  default:
+    return state
   }
 }

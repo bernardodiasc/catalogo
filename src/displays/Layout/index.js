@@ -1,2 +1,3 @@
 import Layout from './Layout'
-export default Layout
+import { withRouter } from 'react-router-dom'
+export default withRouter(Layout)

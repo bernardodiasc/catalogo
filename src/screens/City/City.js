@@ -34,7 +34,7 @@ class City extends Component {
 
   render() {
     return (
-      <Layout sidebar={false}>
+      <Layout>
         {this.cititesSelectors.getCityNameById(this.props.city)}
         <hr />
         {Object.keys(this.advertisers).map(advertiser => (

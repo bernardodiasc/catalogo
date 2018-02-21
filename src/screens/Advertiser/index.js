@@ -1,8 +1,8 @@
-import Advertiser from './Advertiser'
 import { withRouter } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { notFound } from 'actions'
+import Advertiser from './Advertiser'
 
 const mapStateToProps = store => ({
   store: store,

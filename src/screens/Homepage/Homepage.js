@@ -15,7 +15,7 @@ class Homepage extends Component {
 
   render() {
     return (
-      <Layout sidebar={false}>
+      <Layout>
         <Welcome onSelect={this.handleSelect} />
       </Layout>
     )

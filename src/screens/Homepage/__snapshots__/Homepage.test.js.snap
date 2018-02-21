@@ -1,15 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders without crashing 1`] = `
-<Layout
-  headbar={true}
-  notification={false}
-  sidebar={false}
-  toggleHeadbar={[Function]}
-  toggleSidebar={[Function]}
->
+<withRouter(Layout)>
   <Welcome
     onSelect={[Function]}
   />
-</Layout>
+</withRouter(Layout)>
 `;

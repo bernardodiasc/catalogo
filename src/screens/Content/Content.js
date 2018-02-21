@@ -9,38 +9,38 @@ class Content extends Component {
 
   renderContent(page) {
     switch (page) {
-      case 'quem-somos':
-        return (
-          <p key="quem-somos">
+    case 'quem-somos':
+      return (
+        <p key="quem-somos">
             quem-somos
-          </p>
-        )
-      case 'anunciar':
-        return (
-          <p key="anunciar">
+        </p>
+      )
+    case 'anunciar':
+      return (
+        <p key="anunciar">
             anunciar
-          </p>
-        )
-      case 'franquia':
-        return (
-          <p key="franquia">
+        </p>
+      )
+    case 'franquia':
+      return (
+        <p key="franquia">
             franquia
-          </p>
-        )
-      case 'contato':
-        return (
-          <p key="contato">
+        </p>
+      )
+    case 'contato':
+      return (
+        <p key="contato">
             contato
-          </p>
-        )
-      default:
-        return null
+        </p>
+      )
+    default:
+      return null
     }
   }
 
   render() {
     return (
-      <Layout sidebar={false}>
+      <Layout>
         {this.renderContent(this.props.page)}
       </Layout>
     )

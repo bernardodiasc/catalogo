@@ -38,7 +38,7 @@ class Advertiser extends Component {
 
   render() {
     return (
-      <Layout sidebar={false}>
+      <Layout>
         {this.props.advertiser}
         <hr />
         <Link to={`${config.PUBLIC_URL}/${this.props.city}`}>voltar para pagina da cidade</Link><br/>

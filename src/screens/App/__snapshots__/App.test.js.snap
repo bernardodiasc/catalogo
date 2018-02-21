@@ -1,47 +1,44 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders without crashing 1`] = `
-<withRouter(ScrollToTop)>
-  <Switch>
-    <Route
-      exact={true}
-      path="/quem-somos"
-      render={[Function]}
-    />
-    <Route
-      exact={true}
-      path="/anunciar"
-      render={[Function]}
-    />
-    <Route
-      exact={true}
-      path="/franquia"
-      render={[Function]}
-    />
-    <Route
-      exact={true}
-      path="/contato"
-      render={[Function]}
-    />
-    <Route
-      component={[Function]}
-      exact={true}
-      path="/"
-    />
-    <Route
-      exact={true}
-      path="/:city"
-      render={[Function]}
-    />
-    <Route
-      exact={true}
-      path="/:city/:advertiser"
-      render={[Function]}
-    />
-    <Route
-      component={[Function]}
-    />
-  </Switch>
-  <Sitemap />
-</withRouter(ScrollToTop)>
+<Switch>
+  <Route
+    exact={true}
+    path="/quem-somos"
+    render={[Function]}
+  />
+  <Route
+    exact={true}
+    path="/anunciar"
+    render={[Function]}
+  />
+  <Route
+    exact={true}
+    path="/franquia"
+    render={[Function]}
+  />
+  <Route
+    exact={true}
+    path="/contato"
+    render={[Function]}
+  />
+  <Route
+    component={[Function]}
+    exact={true}
+    path="/"
+  />
+  <Route
+    exact={true}
+    path="/:city"
+    render={[Function]}
+  />
+  <Route
+    exact={true}
+    path="/:city/:advertiser"
+    render={[Function]}
+  />
+  <Route
+    component={[Function]}
+  />
+</Switch>
 `;

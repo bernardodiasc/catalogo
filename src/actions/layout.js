@@ -1,10 +1,15 @@
-export const TOGGLE_HEADBAR = 'TOGGLE_HEADBAR'
-export const TOGGLE_SIDEBAR = 'TOGGLE_SIDEBAR'
+export const TOGGLE_HEADERBAR = 'TOGGLE_HEADERBAR'
+export const TOGGLE_LEFTCOLUMN = 'TOGGLE_LEFTCOLUMN'
+export const TOGGLE_RIGHTCOLUMN = 'TOGGLE_RIGHTCOLUMN'
 
-export const toggleHeadbar = () => ({
-  type: TOGGLE_HEADBAR
+export const toggleHeaderBar = () => ({
+  type: TOGGLE_HEADERBAR
 })
 
-export const toggleSidebar = () => ({
-  type: TOGGLE_SIDEBAR
+export const toggleLeftColumn = () => ({
+  type: TOGGLE_LEFTCOLUMN
+})
+
+export const toggleRightColumn = () => ({
+  type: TOGGLE_RIGHTCOLUMN
 })
