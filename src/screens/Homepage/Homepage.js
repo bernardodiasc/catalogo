@@ -5,7 +5,9 @@ import Layout from 'displays/Layout'
 import Welcome from 'displays/Welcome'
 
 class Homepage extends Component {
-  static defaultProps = {}
+  static defaultProps = {
+    history: [],
+  }
 
   handleSelect = (value) => {
     this.props.history.push(`${config.PUBLIC_URL}/${value}`)
