@@ -1,0 +1,18 @@
+{
+  "cities": {
+    "ubatuba": {
+      "index.md": {
+        "file": "/cities/ubatuba/index.md",
+        "dir": "/cities/ubatuba",
+        "name": "index",
+        "base": "index.md",
+        "ext": ".md",
+        "attr": {
+          "name": "Ubatuba",
+          "state": "São Paulo"
+        },
+        "body": "\nCidade bonita demais.\n"
+      }
+    }
+  }
+}

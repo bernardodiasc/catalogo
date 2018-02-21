@@ -18,6 +18,26 @@ class App extends Component {
           <Switch>
             <Route
               exact={true}
+              path={`${config.PUBLIC_URL}/quem-somos`}
+              render={() => <Content page="quem-somos" />}
+            />
+            <Route
+              exact={true}
+              path={`${config.PUBLIC_URL}/anunciar`}
+              render={() => <Content page="anunciar" />}
+            />
+            <Route
+              exact={true}
+              path={`${config.PUBLIC_URL}/franquia`}
+              render={() => <Content page="franquia" />}
+            />
+            <Route
+              exact={true}
+              path={`${config.PUBLIC_URL}/contato`}
+              render={() => <Content page="contato" />}
+            />
+            <Route
+              exact={true}
               path={`${config.PUBLIC_URL}/`}
               component={Homepage}
             />
@@ -32,24 +52,11 @@ class App extends Component {
               exact={true}
               path={`${config.PUBLIC_URL}/:city/:advertiser`}
               render={({ match }) => (
-                <Advertiser city={match.params.city} advertiser={match.params.advertiser} />
+                <Advertiser
+                  city={match.params.city}
+                  advertiser={match.params.advertiser}
+                />
               )}
-            />
-            <Route
-              path={`${config.PUBLIC_URL}/quem-somos`}
-              render={() => <Content page="quem-somos" />}
-            />
-            <Route
-              path={`${config.PUBLIC_URL}/anunciar`}
-              render={() => <Content page="anunciar" />}
-            />
-            <Route
-              path={`${config.PUBLIC_URL}/franquia`}
-              render={() => <Content page="franquia" />}
-            />
-            <Route
-              path={`${config.PUBLIC_URL}/contato`}
-              render={() => <Content page="contato" />}
             />
             <Route component={NotFound} />
           </Switch>

@@ -1,0 +1,34 @@
+{
+  "advertisers": {
+    "escola-exemplo": {
+      "index.md": {
+        "file": "/advertisers/escola-exemplo/index.md",
+        "dir": "/advertisers/escola-exemplo",
+        "name": "index",
+        "base": "index.md",
+        "ext": ".md",
+        "attr": {
+          "name": "Escola Exemplo",
+          "category": "escola",
+          "city": "ubatuba"
+        },
+        "body": "\nGente boa é gente inteligente.\n"
+      }
+    },
+    "padaria-exemplo": {
+      "index.md": {
+        "file": "/advertisers/padaria-exemplo/index.md",
+        "dir": "/advertisers/padaria-exemplo",
+        "name": "index",
+        "base": "index.md",
+        "ext": ".md",
+        "attr": {
+          "name": "Padaria Exemplo",
+          "category": "padaria",
+          "city": "ubatuba"
+        },
+        "body": "\nPãozin diliça\n"
+      }
+    }
+  }
+}

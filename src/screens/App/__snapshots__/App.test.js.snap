@@ -5,6 +5,26 @@ exports[`renders without crashing 1`] = `
   <withRouter(ScrollToTop)>
     <Switch>
       <Route
+        exact={true}
+        path="/quem-somos"
+        render={[Function]}
+      />
+      <Route
+        exact={true}
+        path="/anunciar"
+        render={[Function]}
+      />
+      <Route
+        exact={true}
+        path="/franquia"
+        render={[Function]}
+      />
+      <Route
+        exact={true}
+        path="/contato"
+        render={[Function]}
+      />
+      <Route
         component={[Function]}
         exact={true}
         path="/"
@@ -17,22 +37,6 @@ exports[`renders without crashing 1`] = `
       <Route
         exact={true}
         path="/:city/:advertiser"
-        render={[Function]}
-      />
-      <Route
-        path="/quem-somos"
-        render={[Function]}
-      />
-      <Route
-        path="/anunciar"
-        render={[Function]}
-      />
-      <Route
-        path="/franquia"
-        render={[Function]}
-      />
-      <Route
-        path="/contato"
         render={[Function]}
       />
       <Route

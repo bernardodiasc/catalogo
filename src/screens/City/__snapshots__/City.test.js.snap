@@ -9,19 +9,5 @@ exports[`renders without crashing 1`] = `
   toggleSidebar={[Function]}
 >
   <hr />
-  <Link
-    replace={false}
-    to="/ubatuba/escola-exemplo"
-  >
-    Escola Exemplo
-  </Link>
-  <br />
-  <Link
-    replace={false}
-    to="/ubatuba/padaria-exemplo"
-  >
-    Padaria Exemplo
-  </Link>
-  <br />
 </Layout>
 `;

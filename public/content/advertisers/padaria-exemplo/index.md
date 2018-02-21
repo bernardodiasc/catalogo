@@ -1,6 +1,7 @@
 ---
 name: Padaria Exemplo
-category: Padaria
+category: padaria
+city: ubatuba
 ---
 
 Pãozin diliça
