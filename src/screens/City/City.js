@@ -9,6 +9,7 @@ import AdvertisersSelectors from 'selectors/advertisers'
 
 import Layout from 'displays/Layout'
 import ListingBlock from 'displays/ListingBlock'
+import CityDetails from 'displays/CityDetails'
 
 class City extends Component {
   static defaultProps = {
@@ -72,7 +73,7 @@ class City extends Component {
 
     return (
       <Layout hasSearchBar leftColumn={leftColumnRender}>
-        {this.cititesSelectors.getCityNameById(this.props.city)}
+        <CityDetails city={this.city} />
       </Layout>
     )
   }

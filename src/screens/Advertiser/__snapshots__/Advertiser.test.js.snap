@@ -17,5 +17,9 @@ exports[`renders without crashing 1`] = `
     ]
   }
   hasSearchBar={true}
-/>
+>
+  <AdvertiserDetails
+    advertiser={Object {}}
+  />
+</withRouter(Layout)>
 `;

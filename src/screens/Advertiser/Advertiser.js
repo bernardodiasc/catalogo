@@ -8,6 +8,7 @@ import CitiesSelectors from 'selectors/cities'
 import AdvertisersSelectors from 'selectors/advertisers'
 
 import Layout from 'displays/Layout'
+import AdvertiserDetails from 'displays/AdvertiserDetails'
 
 class Advertiser extends Component {
   static defaultProps = {
@@ -54,7 +55,7 @@ class Advertiser extends Component {
 
     return (
       <Layout hasSearchBar breadcrumbs={breadcrumbsRender}>
-        {this.props.advertiser}
+        <AdvertiserDetails advertiser={this.advertiser} />
       </Layout>
     )
   }
