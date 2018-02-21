@@ -3,6 +3,32 @@
 exports[`renders without crashing 1`] = `
 <withRouter(Layout)
   hasSearchBar={true}
-  leftColumn={Array []}
+  leftColumn={
+    Array [
+      <ListingBlock
+        list={Array []}
+        title="Outros anunciantes"
+    />,
+      <ListingBlock
+        list={
+            Array [
+                <Link
+                  replace={false}
+                  to="/null/?category=escola"
+            >
+                  Escolas
+            </Link>,
+                <Link
+                  replace={false}
+                  to="/null/?category=padaria"
+            >
+                  Padarias
+            </Link>,
+              ]
+        }
+        title="Categorias"
+    />,
+    ]
+  }
 />
 `;

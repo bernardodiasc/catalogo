@@ -8,6 +8,7 @@ import CitiesSelectors from 'selectors/cities'
 import AdvertisersSelectors from 'selectors/advertisers'
 
 import Layout from 'displays/Layout'
+import ListingBlock from 'displays/ListingBlock'
 
 class City extends Component {
   static defaultProps = {
@@ -33,7 +34,7 @@ class City extends Component {
   }
 
   render() {
-    const leftColumnRender = Object.keys(this.advertisers)
+    const advertisersList = Object.keys(this.advertisers)
       .map(advertiser => (
         <Link
           key={advertiser}
@@ -42,6 +43,32 @@ class City extends Component {
           {this.advertisersSelectors.getAdvertiserNameById(advertiser)}
         </Link>
       ))
+
+    const leftColumnRender = [
+      <ListingBlock
+        key="listingblock-advertisers"
+        title="Outros anunciantes"
+        list={advertisersList}
+      />,
+      <ListingBlock
+        key="listingblock-categories"
+        title="Categorias"
+        list={[
+          <Link
+            key="listingblock-categories-escolas"
+            to={`${config.PUBLIC_URL}/${this.props.city}/?category=escola`}
+          >
+            Escolas
+          </Link>,
+          <Link
+            key="listingblock-categories-padarias"
+            to={`${config.PUBLIC_URL}/${this.props.city}/?category=padaria`}
+          >
+            Padarias
+          </Link>
+        ]}
+      />
+    ]
 
     return (
       <Layout hasSearchBar leftColumn={leftColumnRender}>

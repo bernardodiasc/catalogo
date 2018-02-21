@@ -1,0 +1,11 @@
+.ListingBlock {
+  margin-bottom: 20px;
+}
+
+.ListingBlock__title {
+  font-weight: bold;
+}
+
+.ListingBlock__item {
+  line-height: 1.4;
+}

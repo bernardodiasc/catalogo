@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react'
+import React, { PureComponent, Children } from 'react'
 import './Breadcrumbs.css'
 
 class Breadcrumbs extends PureComponent {
@@ -9,7 +9,11 @@ class Breadcrumbs extends PureComponent {
   render() {
     return (
       <div className="Layout-Breadcrumbs">
-        {this.props.children}
+        {Children.map(this.props.children, children => (
+          <div className="Layout-Breadcrumbs__item">
+            {children}
+          </div>
+        ))}
       </div>
     )
   }

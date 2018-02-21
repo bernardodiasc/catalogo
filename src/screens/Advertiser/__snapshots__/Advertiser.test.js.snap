@@ -6,6 +6,12 @@ exports[`renders without crashing 1`] = `
     Array [
       <Link
         replace={false}
+        to="/"
+    >
+        Início
+    </Link>,
+      <Link
+        replace={false}
         to="/null"
     />,
     ]

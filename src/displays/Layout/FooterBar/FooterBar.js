@@ -7,7 +7,6 @@ class FooterBar extends PureComponent {
   render() {
     return (
       <div className="Layout-FooterBar">
-        FooterBar
       </div>
     )
   }

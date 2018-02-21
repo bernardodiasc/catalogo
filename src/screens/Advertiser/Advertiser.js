@@ -39,6 +39,12 @@ class Advertiser extends Component {
   render() {
     const breadcrumbsRender = [
       <Link
+        key="breadcrumbs-home"
+        to={`${config.PUBLIC_URL}/`}
+      >
+        Início
+      </Link>,
+      <Link
         key={`breadcrumbs-${this.props.city}`}
         to={`${config.PUBLIC_URL}/${this.props.city}`}
       >

@@ -1,8 +1,9 @@
 .Welcome {
   display: flex;
-  align-items: center;
+  place-content: center;
+  place-items: center;
   flex-direction: column;
-  padding: 100px 0;
+  height: 100%;
 }
 
 .Welcome__copy {

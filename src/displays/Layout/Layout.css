@@ -1,26 +1,55 @@
 .Layout {
-  display: flex;
-  flex-wrap: wrap;
   width: 100%;
+  height: 100%;
   max-width: 900px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .Layout__HeaderBar {
   width: 100%;
   height: 100px;
+  border-bottom: 1px solid silver;
 }
 
-.Layout__SearchBar {}
+.Layout__SearchBar {
+  width: 100%;
+  border-bottom: 1px solid silver;
+}
 
-.Layout__Breadcrumbs {}
+.Layout__Breadcrumbs {
+  width: 100%;
+  border-bottom: 1px solid silver;
+}
 
-.Layout__LeftColumn {}
+.Layout__Body {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 500px;
+  flex: 1;
+}
 
-.Layout__RightColumn {}
+.Layout__LeftColumn {
+  width: 200px;
+  height: 100%;
+  border-right: 1px solid silver;
+  flex-shrink: 0;
+}
+
+.Layout__RightColumn {
+  width: 200px;
+  height: 100%;
+  border-left: 1px solid silver;
+  flex-shrink: 0;
+}
 
 .Layout__Content {
-  width: 100%;
+  flex: 1;
 }
 
-.Layout__FooterBar {}
+.Layout__FooterBar {
+  height: 150px;
+  border-top: 1px solid silver;
+  flex-shrink: 0;
+}

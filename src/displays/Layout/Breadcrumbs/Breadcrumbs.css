@@ -1,1 +1,14 @@
 .Layout-Breadcrumbs {}
+
+.Layout-Breadcrumbs__item {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.Layout-Breadcrumbs__item::after {
+  content: ' >';
+}
+
+.Layout-Breadcrumbs__item:last-of-type::after {
+  content: '';
+}

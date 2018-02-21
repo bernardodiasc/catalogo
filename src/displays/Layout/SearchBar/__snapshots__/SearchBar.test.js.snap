@@ -4,6 +4,43 @@ exports[`renders without crashing 1`] = `
 <div
   className="Layout-SearchBar"
 >
-  SearchBar
+  <div
+    className="Layout-SearchBar__selectbox"
+  >
+    <SelectBox
+      name="select-city"
+      onChange={[Function]}
+      options={
+        Array [
+          Object {
+            "label": "Ubatuba",
+            "value": "ubatuba",
+          },
+        ]
+      }
+      placeholder="Selecione uma cidade..."
+    />
+  </div>
+  <div
+    className="Layout-SearchBar__selectbox"
+  >
+    <SelectBox
+      name="select-category"
+      onChange={[Function]}
+      options={
+        Array [
+          Object {
+            "label": "Escola",
+            "value": "escola",
+          },
+          Object {
+            "label": "Padaria",
+            "value": "padaria",
+          },
+        ]
+      }
+      placeholder="Selecione uma categoria..."
+    />
+  </div>
 </div>
 `;

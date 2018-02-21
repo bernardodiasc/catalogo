@@ -44,25 +44,27 @@ class Layout extends PureComponent {
             </Breadcrumbs>
           </div>
         )}
-        {this.props.leftColumn && (
-          <aside className="Layout__LeftColumn">
-            <LeftColumn>
-              {this.props.leftColumn}
-            </LeftColumn>
-          </aside>
-        )}
-        {this.props.rightColumn && (
-          <aside className="Layout__RightColumn">
-            <RightColumn>
-              {this.props.rightColumn}
-            </RightColumn>
-          </aside>
-        )}
-        <article className="Layout__Content">
-          <Content>
-            {this.props.children}
-          </Content>
-        </article>
+        <div className="Layout__Body">
+          {this.props.leftColumn && (
+            <aside className="Layout__LeftColumn">
+              <LeftColumn>
+                {this.props.leftColumn}
+              </LeftColumn>
+            </aside>
+          )}
+          {this.props.rightColumn && (
+            <aside className="Layout__RightColumn">
+              <RightColumn>
+                {this.props.rightColumn}
+              </RightColumn>
+            </aside>
+          )}
+          <article className="Layout__Content">
+            <Content>
+              {this.props.children}
+            </Content>
+          </article>
+        </div>
         <footer className="Layout__FooterBar">
           <FooterBar />
           <Sitemap />

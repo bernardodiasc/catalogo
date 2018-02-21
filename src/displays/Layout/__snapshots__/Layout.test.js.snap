@@ -9,11 +9,15 @@ exports[`renders without crashing 1`] = `
   >
     <HeaderBar />
   </header>
-  <article
-    className="Layout__Content"
+  <div
+    className="Layout__Body"
   >
-    <Content />
-  </article>
+    <article
+      className="Layout__Content"
+    >
+      <Content />
+    </article>
+  </div>
   <footer
     className="Layout__FooterBar"
   >
