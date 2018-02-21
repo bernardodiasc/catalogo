@@ -1,6 +1,7 @@
 ---
 name: Escola Exemplo
-category: Escola
+category: escola
+city: ubatuba
 ---
 
 Gente boa é gente inteligente.
