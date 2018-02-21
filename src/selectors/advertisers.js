@@ -13,6 +13,14 @@ export default class AdvertisersSelectors {
     return pathOr({}, ['advertisers', id], this.data)
   }
 
+  getAdvertiserAttrById(id = '') {
+    return pathOr({}, ['advertisers', id, 'index.md', 'attr'], this.data)
+  }
+
+  getAdvertiserBodyById(id = '') {
+    return pathOr('', ['advertisers', id, 'index.md', 'body'], this.data)
+  }
+
   getAdvertiserNameById(id = '') {
     return pathOr('', ['advertisers', id, 'index.md', 'attr', 'name'], this.data)
   }

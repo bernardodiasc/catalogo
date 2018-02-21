@@ -24,6 +24,8 @@ class Advertiser extends Component {
     this.city = this.cititesSelectors.getCityById(this.props.city)
     this.advertisersSelectors = new AdvertisersSelectors(data)
     this.advertiser = this.advertisersSelectors.getAdvertiserById(this.props.advertiser)
+    this.attr = this.advertisersSelectors.getAdvertiserAttrById(this.props.advertiser)
+    this.body = this.advertisersSelectors.getAdvertiserBodyById(this.props.advertiser)
 
     if (isEmpty(this.city)) {
       this.props.notFound('deu ruim - cidade nao existe mano')
@@ -34,7 +36,6 @@ class Advertiser extends Component {
     } else {
       this.props.notFound('')
     }
-
   }
 
   render() {
@@ -55,7 +56,7 @@ class Advertiser extends Component {
 
     return (
       <Layout hasSearchBar breadcrumbs={breadcrumbsRender}>
-        <AdvertiserDetails advertiser={this.advertiser} />
+        <AdvertiserDetails {...this.attr} body={this.body}  />
       </Layout>
     )
   }

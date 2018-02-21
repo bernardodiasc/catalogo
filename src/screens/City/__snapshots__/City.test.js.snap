@@ -32,7 +32,9 @@ exports[`renders without crashing 1`] = `
   }
 >
   <CityDetails
-    city={Object {}}
+    body=""
+    name=""
+    state=""
   />
 </withRouter(Layout)>
 `;

@@ -5,24 +5,17 @@ import './CityDetails.css'
 
 class CityDetails extends PureComponent {
   static defaultProps = {
-    city: {
-      'index.md': {
-        attr: {
-          name: '',
-          state: '',
-        },
-        body: '',
-      }
-    }
+    name: '',
+    state: '',
+    body: '',
   }
 
   render() {
-    const { attr, body } = this.props.city['index.md']
     return (
       <div className="CityDetails">
-        <h1>{attr.name}</h1>
-        <p>{attr.state}</p>
-        {body && renderHTML(marked(body))}
+        <h1>{this.props.name}</h1>
+        <p>{this.props.state}</p>
+        {renderHTML(marked(this.props.body))}
       </div>
     )
   }

@@ -22,6 +22,10 @@ class City extends Component {
     super(props)
     this.cititesSelectors = new CitiesSelectors(data)
     this.city = this.cititesSelectors.getCityById(this.props.city)
+    this.attr = this.cititesSelectors.getCityAttrById(this.props.city)
+    this.body = this.cititesSelectors.getCityBodyById(this.props.city)
+    this.advertisersSelectors = new AdvertisersSelectors(data)
+    this.advertisers = this.advertisersSelectors.getAllAdvertisersByCity(this.props.city)
 
     if (isEmpty(this.city)) {
       this.props.notFound('deu ruim')
@@ -30,8 +34,6 @@ class City extends Component {
       this.props.notFound('')
     }
 
-    this.advertisersSelectors = new AdvertisersSelectors(data)
-    this.advertisers = this.advertisersSelectors.getAllAdvertisersByCity(this.props.city)
   }
 
   render() {
@@ -73,7 +75,7 @@ class City extends Component {
 
     return (
       <Layout hasSearchBar leftColumn={leftColumnRender}>
-        <CityDetails city={this.city} />
+        <CityDetails {...this.attr} body={this.body} />
       </Layout>
     )
   }

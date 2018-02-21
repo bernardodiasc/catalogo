@@ -5,41 +5,34 @@ import './AdvertiserDetails.css'
 
 class AdvertiserDetails extends PureComponent {
   static defaultProps = {
-    advertiser: {
-      'index.md': {
-        attr: {
-          name: '',
-          category: '',
-          contact: {},
-          location: {},
-        },
-        body: '',
-      }
-    },
+    name: '',
+    category: '',
+    contact: {},
+    location: {},
+    body: '',
   }
 
   render() {
-    const { attr, body } = this.props.advertiser['index.md']
     return (
       <div className="AdvertiserDetails">
-        <h1>{attr.name}</h1>
-        <p>{attr.category}</p>
-        {body && renderHTML(marked(body))}
+        <h1>{this.props.name}</h1>
+        <p>{this.props.category}</p>
+        {renderHTML(marked(this.props.body))}
         <hr />
         <ul>
-          {Object.keys(attr.contact).map(each => (
+          {Object.keys(this.props.contact).map(each => (
             <li key={`contact-${each}`}>
               <strong>{each}:</strong>
-              <span>{attr.contact[each]}</span>
+              <span>{this.props.contact[each]}</span>
             </li>
           ))}
         </ul>
         <hr />
         <ul>
-          {Object.keys(attr.location).map(each => each !== 'coordinates' && (
+          {Object.keys(this.props.location).map(each => each !== 'coordinates' && (
             <li key={`location-${each}`}>
               <strong>{each}:</strong>
-              <span>{attr.location[each]}</span>
+              <span>{this.props.location[each]}</span>
             </li>
           ))}
         </ul>
