@@ -16,9 +16,7 @@ jobs:
 
       - run:
           name: Install dependencies
-          command: |
-            yarn add puppeteer
-            yarn install
+          command: yarn install
 
       - run:
           name: Deploy application
