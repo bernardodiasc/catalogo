@@ -11,3 +11,4 @@ Requirement: Node.js v8.6.0 _(use [nvm](https://github.com/creationix/nvm) to ma
 - Tests with Jest: `yarn test`
 - Build static files: `yarn build`
 - Static server: `yarn serve` then open http://localhost:5000/
+- Deploy project: `yarn deploy`
