@@ -5,6 +5,7 @@ import SelectBox from 'displays/SelectBox'
 
 class Welcome extends PureComponent {
   static defaultProps = {
+    cities: [],
     onSelect: value => value
   }
 
@@ -23,9 +24,7 @@ class Welcome extends PureComponent {
             name="select-city"
             placeholder="Selecione uma cidade..."
             onChange={this.handleChange}
-            options={[
-              { value: 'ubatuba', label: 'Ubatuba' },
-            ]}
+            options={this.props.cities}
           />
         </div>
       </div>

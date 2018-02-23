@@ -6,17 +6,25 @@ import Welcome from 'displays/Welcome'
 
 class Homepage extends Component {
   static defaultProps = {
-    history: [],
+    cities: [],
+    selectCity: () => {},
+    history: {
+      push: () => {},
+    },
   }
 
   handleSelect = (value) => {
+    this.props.selectCity(value)
     this.props.history.push(`${config.PUBLIC_URL}/${value}`)
   }
 
   render() {
     return (
       <Layout>
-        <Welcome onSelect={this.handleSelect} />
+        <Welcome
+          cities={this.props.cities}
+          onSelect={this.handleSelect}
+        />
       </Layout>
     )
   }

@@ -14,7 +14,9 @@ class Advertiser extends Component {
   static defaultProps = {
     city: null,
     advertiser: null,
-    history: [],
+    history: {
+      push: () => {},
+    },
     notFound: () => {},
   }
 

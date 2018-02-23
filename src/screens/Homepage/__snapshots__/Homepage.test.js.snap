@@ -3,6 +3,7 @@
 exports[`renders without crashing 1`] = `
 <withRouter(Layout)>
   <Welcome
+    cities={Array []}
     onSelect={[Function]}
   />
 </withRouter(Layout)>

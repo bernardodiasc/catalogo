@@ -15,14 +15,7 @@ exports[`renders without crashing 1`] = `
     <SelectBox
       name="select-city"
       onChange={[Function]}
-      options={
-        Array [
-          Object {
-            "label": "Ubatuba",
-            "value": "ubatuba",
-          },
-        ]
-      }
+      options={Array []}
       placeholder="Selecione uma cidade..."
     />
   </div>

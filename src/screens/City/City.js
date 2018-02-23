@@ -14,7 +14,9 @@ import CityDetails from 'displays/CityDetails'
 class City extends Component {
   static defaultProps = {
     city: null,
-    history: [],
+    history: {
+      push: () => {},
+    },
     notFound: () => {},
   }
 
